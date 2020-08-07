@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
        features = "src/test/resources/features" ,
         glue = "com/Cybertek/step_definition",
         dryRun = false,
-        tags = "@login"
+        tags = "@librarianParam"
 )
 public class CukesRunner {
 }

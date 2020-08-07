@@ -1,11 +1,12 @@
-@login
-Feature: LoginAs I user, I should be able to login
-  Scenario: Login as a librarian
-    Given I am on the login page
-    When I login as a librarian
-    Then dashboard should be displayed
 
+Feature: LoginAs I user, I should be able to login
+  @librarian
+  Scenario: Login as a librarian
+    Given Librarian on the login page
+    When Librarian login as a librarian
+    Then Dashboard should be displayed
+ @student
   Scenario: Login as a student
-    Given I am on the login page
-    When I login as a student
-    Then dashboard should be displayed
+    Given Student on the login page
+    When Student login as a student
+    Then Dashboard1 should be displayed
